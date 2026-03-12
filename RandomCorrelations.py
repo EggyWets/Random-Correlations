@@ -1230,6 +1230,7 @@ def render_tab(tab, crime_var, pred_var, yf, yt):
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+server = app.server
 if __name__ == "__main__":
     print("\n" + "═"*60)
     print("  Open: http://127.0.0.1:8051")
