@@ -615,7 +615,7 @@ def compute_correlations(df, crime_var):
     for var, label in PREDICTOR_VARS.items():
         if var not in df.columns:
             continue
-        sub = df[[crime_var, var]].dropna()
+        sub = df[[crime_var, var]].dropna(how="any")
         if len(sub) < 5:
             continue
         try:
